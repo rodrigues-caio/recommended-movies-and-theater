@@ -40,9 +40,9 @@ export const Content = styled.div`
   }
 
   a {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30px 1fr;
     align-items: center;
-    justify-content: center;
     background: #951919;
     height: 46px;
     border-radius: 15px;
