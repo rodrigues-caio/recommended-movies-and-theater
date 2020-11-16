@@ -1,17 +1,17 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Welcome from '../pages/Welcome';
-import LogIn from '../pages/LogIn';
-import Register from '../pages/Register';
-import Dashboard from '../pages/Dashboard';
- 
+import Home from '../pages/Home';
+import Rooms from '../pages/Rooms';
+import SingleRoom from '../pages/SingleRoom';
+import Error from '../pages/Error';
+
 const Router = () => (
   <Switch>
-    <Route path="/" exact component={Welcome} />
-    <Route path="/logon" component={LogIn} />
-    <Route path="/register" component={Register} />
-    <Route path="/dashboard" component={Dashboard} />
+    <Route path="/" exact component={Home} />
+    <Route path="/rooms" component={Rooms} />
+    <Route path="/rooms/:slug" component={SingleRoom} />
+    <Route component={Error} />
   </Switch>
 );
 

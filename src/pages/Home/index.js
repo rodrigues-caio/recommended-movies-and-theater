@@ -5,20 +5,16 @@ import Card from '../../components/Card';
 
 import { Container, Header, Content, Cards } from './styles';
 
-const Dashboard = () => {
-
+const Home = () => {
   return (
     <Container>
-
       <Header>
         <h1>Olá, Caio</h1>
 
         <Button></Button>
-
       </Header>
 
       <Content>
-
         <Cards>
           <Card />
           <Card />
@@ -29,11 +25,9 @@ const Dashboard = () => {
           <Card />
           <Card />
         </Cards>
-
       </Content>
-      
     </Container>
   );
 };
 
-export default Dashboard;
+export default Home;
